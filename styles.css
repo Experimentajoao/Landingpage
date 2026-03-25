@@ -1030,7 +1030,7 @@ h5 { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spac
 @media (max-width: 768px) {
   :root { --section-py: 3.5rem; }
   .navbar__links { display: none; }
-  .hero__content { padding: 7rem 1.5rem 5rem; }
+  .hero__content { padding: 7rem 1.5rem 8rem; }
   .hero__stats { flex-wrap: wrap; gap: 1rem; padding: 0.75rem 1.25rem; }
   .compare__grid { grid-template-columns: 1fr; }
   .contact__inner { grid-template-columns: 1fr; gap: 3rem; }
@@ -1045,6 +1045,7 @@ h5 { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spac
 }
 
 @media (max-width: 480px) {
+  .hero__content { padding: 6rem 1.25rem 9rem; }
   .hero__actions { flex-direction: column; }
   .hero__actions .btn { width: 100%; }
   .btn--cta-big { width: 100%; min-width: unset; }
