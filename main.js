@@ -14,7 +14,7 @@ const initStarfield = () => {
 
   // ---- Config ----
   const STAR_COUNT       = 220;
-  const COMET_INTERVAL   = 3200;   // ms between new comets
+  const COMET_INTERVAL   = 2200;   // ms between new comets
   const CONSTELLATION_R  = 140;    // max dist for constellation lines
   const BRIGHT_COUNT     = 18;     // stars that form constellations
 
@@ -186,8 +186,8 @@ const initStarfield = () => {
   // ---- Init ----
   resize();
   window.addEventListener('resize', resize, { passive: true });
-  // Fire first comet immediately
-  setTimeout(spawnComet, 800);
+  // Burst of comets on entry, then continuous
+  [200, 600, 1100, 1700, 2400].forEach(ms => setTimeout(spawnComet, ms));
   animId = requestAnimationFrame(draw);
 };
 
