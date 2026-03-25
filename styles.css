@@ -259,120 +259,138 @@ h5 { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spac
    ================================================ */
 .hero {
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  background: var(--gradient-hero);
+  justify-content: center;
+  background: #06080f;
   overflow: hidden;
-  padding: 6rem 0 4rem;
-}
-.hero__bg-shape {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.4;
-  pointer-events: none;
-}
-.hero__bg-shape--1 {
-  width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(251,191,36,.25) 0%, transparent 70%);
-  top: -200px; right: -100px;
-}
-.hero__bg-shape--2 {
-  width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(249,115,22,.2) 0%, transparent 70%);
-  bottom: -100px; left: -50px;
 }
 
+/* Canvas star background */
+.hero__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: block;
+}
+
+/* Radial glow overlay — ties starfield to brand */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 110%, rgba(249,115,22,.12) 0%, transparent 100%),
+    radial-gradient(ellipse 40% 35% at 15% 10%, rgba(251,191,36,.06) 0%, transparent 100%),
+    radial-gradient(ellipse 35% 30% at 85% 5%,  rgba(249,115,22,.05) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Center content block */
 .hero__content {
   position: relative;
   z-index: 2;
-  max-width: 680px;
+  text-align: center;
+  max-width: 840px;
+  padding: 9rem 1.5rem 7rem;
+  width: 100%;
+  margin: 0 auto;
 }
+
 .hero__badge {
   display: inline-block;
   padding: 0.4rem 1.1rem;
-  background: rgba(251,191,36,.12);
-  border: 1px solid rgba(251,191,36,.25);
+  background: rgba(251,191,36,.1);
+  border: 1px solid rgba(251,191,36,.22);
   border-radius: var(--radius-full);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: var(--yellow-300);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
-.hero__title { color: #ffffff; margin-bottom: 1.25rem; }
+
+.hero__title {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-size: clamp(2.8rem, 6.5vw, 5rem);
+}
+
 .hero__subtitle {
-  font-size: 1.1rem;
-  color: var(--gray-400);
-  max-width: 580px;
-  margin-bottom: 2.5rem;
-  line-height: 1.7;
+  font-size: 1.15rem;
+  color: rgba(200,210,230,.65);
+  max-width: 620px;
+  margin: 0 auto 2.75rem;
+  line-height: 1.75;
 }
+
 .hero__actions {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
+
 .hero__stats {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 2rem;
+  padding: 1rem 2rem;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(8px);
 }
+
 .stat strong {
   display: block;
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 800;
   background: var(--gradient-brand);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.stat span { font-size: 0.8rem; color: var(--gray-500); }
+.stat span { font-size: 0.75rem; color: var(--gray-500); }
 .stat__divider {
-  width: 1px; height: 2.5rem;
-  background: rgba(255,255,255,.1);
+  width: 1px; height: 2.25rem;
+  background: rgba(255,255,255,.08);
 }
 
-/* Hero floating cards */
-.hero__visual {
+/* Scroll indicator */
+.hero__scroll-indicator {
   position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 380px;
-  height: 400px;
-  pointer-events: none;
-}
-.hero__card {
-  position: absolute;
-  background: rgba(255,255,255,.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,.1);
-  border-radius: var(--radius-lg);
-  padding: 1.25rem 1.5rem;
+  bottom: 2.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  min-width: 130px;
 }
-.hero__card p { font-size: 0.85rem; font-weight: 500; color: var(--gray-300); }
-.card-glow {
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: var(--gradient-brand);
-  opacity: 0.06;
+.hero__scroll-indicator span {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.25);
 }
-.hero__card .card-emoji { font-size: 2rem; }
-.hero__card--1 { top: 40px;  right: 60px;  animation: float 4s ease-in-out infinite; }
-.hero__card--2 { top: 170px; right: 0px;   animation: float 4s ease-in-out 1.2s infinite; }
-.hero__card--3 { top: 290px; right: 90px;  animation: float 4s ease-in-out 2.4s infinite; }
-
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(249,115,22,.6), transparent);
+  animation: scroll-pulse 2s ease-in-out infinite;
+}
+@keyframes scroll-pulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(1); }
+  50%       { opacity: 1;   transform: scaleY(1.15); }
+}
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50%       { transform: translateY(-12px); }
@@ -885,7 +903,6 @@ h5 { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spac
    RESPONSIVE
    ================================================ */
 @media (max-width: 1024px) {
-  .hero__visual { display: none; }
   .orders__grid { grid-template-columns: 1fr; }
   .hiw-grid { grid-template-columns: repeat(2, 1fr); }
   .pillars { grid-template-columns: repeat(2, 1fr); }
@@ -895,6 +912,8 @@ h5 { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spac
 @media (max-width: 768px) {
   :root { --section-py: 3.5rem; }
   .navbar__links { display: none; }
+  .hero__content { padding: 7rem 1.5rem 5rem; }
+  .hero__stats { flex-wrap: wrap; gap: 1rem; padding: 0.75rem 1.25rem; }
   .compare__grid { grid-template-columns: 1fr; }
   .contact__inner { grid-template-columns: 1fr; gap: 3rem; }
   .footer__inner { grid-template-columns: 1fr; gap: 2rem; }
