@@ -720,6 +720,72 @@ h5 { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spac
 .contact-note a:hover { color: var(--yellow-400); }
 
 /* ================================================
+   SOBRE O CRIADOR
+   ================================================ */
+.about-creator {
+  padding: var(--section-py) 0;
+  background: linear-gradient(135deg, rgba(15,10,30,.85) 0%, rgba(30,15,50,.85) 100%);
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+.about-creator__inner {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+.about-creator__photo-wrap {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--orange-400);
+  box-shadow: 0 0 30px rgba(251,146,60,.3);
+  flex-shrink: 0;
+}
+.about-creator__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 20% 5%;
+  display: block;
+}
+.about-creator__label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--orange-400);
+  margin-bottom: 0.5rem;
+}
+.about-creator__text h2 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  margin-bottom: 1rem;
+}
+.about-creator__text p {
+  color: var(--gray-400);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+.about-creator__text p:last-child { margin-bottom: 0; }
+
+.footer__brand-sub {
+  font-size: 0.75em;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .about-creator__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  .about-creator__photo-wrap {
+    margin: 0 auto;
+  }
+}
+
+/* ================================================
    FOOTER
    ================================================ */
 .footer {
