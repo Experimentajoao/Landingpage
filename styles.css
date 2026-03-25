@@ -953,6 +953,7 @@ h5 { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spac
 .product-card__thumb--bio       { background: linear-gradient(135deg, #0a1a00, #1a3a0a); }
 .product-card__thumb--chemistry { background: linear-gradient(135deg, #1a001a, #2a0a2a); }
 .product-card__thumb--geo       { background: linear-gradient(135deg, #001a1a, #0a2a2a); }
+.product-card__thumb--vector    { background: linear-gradient(135deg, #0a0a2a, #1a103e, #0a1a2a); }
 
 .product-card__emoji { font-size: 3.5rem; filter: drop-shadow(0 0 16px rgba(249,115,22,.5)); }
 .product-card__type {
