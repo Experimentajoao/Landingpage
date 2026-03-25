@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos Gratuitos — @experimenta</title>
+  <meta name="description" content="Explore simuladores, jogos digitais e ambientes virtuais de aprendizagem gratuitos do @experimenta." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">@experimenta</a>
+      <nav class="navbar__links">
+        <a href="index.html#premium">Premium</a>
+        <a href="index.html#encomendas">Encomendas</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+      <a href="index.html#contato" class="btn btn--nav">Fale Conosco</a>
+    </div>
+  </header>
+
+  <!-- HEADER DA PÁGINA -->
+  <section class="products-hero">
+    <div class="hero__bg-shape hero__bg-shape--1"></div>
+    <div class="container products-hero__inner">
+      <a href="index.html" class="back-link">← Voltar ao início</a>
+      <span class="hero__badge">Acesso 100% Gratuito</span>
+      <h1>Produtos <span class="highlight">Gratuitos</span></h1>
+      <p>Simuladores, jogos e ambientes virtuais disponíveis agora, sem necessidade de cadastro ou pagamento. Experimente e leve para sua aula.</p>
+      <div class="products-filter">
+        <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="simulador">Simuladores</button>
+        <button class="filter-btn" data-filter="jogo">Jogos</button>
+        <button class="filter-btn" data-filter="ambiente">Ambientes</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRADE DE PRODUTOS -->
+  <section class="products-grid-section">
+    <div class="container">
+      <div class="products-grid" id="products-grid">
+
+        <!-- PRODUTO 1 -->
+        <article class="product-card" data-category="simulador">
+          <div class="product-card__thumb product-card__thumb--physics">
+            <span class="product-card__emoji">⚡</span>
+            <span class="product-card__type">Simulador</span>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__subject">Física</span>
+            <h3>Simulador de Campo Elétrico</h3>
+            <p>Visualize linhas de campo elétrico em tempo real. Adicione cargas positivas e negativas e observe como o campo se comporta.</p>
+            <div class="product-card__meta">
+              <span>⏱ 30–60 min</span>
+              <span>🎓 Ensino Médio</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="badge-free">Gratuito</span>
+            <a href="#" class="btn btn--primary btn--sm">Acessar →</a>
+          </div>
+        </article>
+
+        <!-- PRODUTO 2 -->
+        <article class="product-card" data-category="jogo">
+          <div class="product-card__thumb product-card__thumb--math">
+            <span class="product-card__emoji">♟️</span>
+            <span class="product-card__type">Jogo</span>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__subject">Matemática</span>
+            <h3>Damas no Plano Cartesiano</h3>
+            <p>O clássico jogo de damas transformado em ferramenta de ensino de Geometria Analítica com coordenadas e vetores.</p>
+            <div class="product-card__meta">
+              <span>⏱ 20–45 min</span>
+              <span>🎓 Ensino Médio</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="badge-free">Gratuito</span>
+            <a href="#" class="btn btn--primary btn--sm">Acessar →</a>
+          </div>
+        </article>
+
+        <!-- PRODUTO 3 -->
+        <article class="product-card" data-category="ambiente">
+          <div class="product-card__thumb product-card__thumb--hardware">
+            <span class="product-card__emoji">🖥️</span>
+            <span class="product-card__type">Ambiente Virtual</span>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__subject">Informática</span>
+            <h3>Explorando a Placa-Mãe</h3>
+            <p>Conheça os componentes de uma placa-mãe em ambiente virtual interativo. Identifique slots, conectores e chips em 3D.</p>
+            <div class="product-card__meta">
+              <span>⏱ 40–60 min</span>
+              <span>🎓 Técnico/Médio</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="badge-free">Gratuito</span>
+            <a href="#" class="btn btn--primary btn--sm">Acessar →</a>
+          </div>
+        </article>
+
+        <!-- PRODUTO 4 -->
+        <article class="product-card" data-category="simulador">
+          <div class="product-card__thumb product-card__thumb--bio">
+            <span class="product-card__emoji">🧬</span>
+            <span class="product-card__type">Simulador</span>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__subject">Biologia</span>
+            <h3>Divisão Celular Interativa</h3>
+            <p>Acompanhe as etapas da mitose e meiose em animação interativa. Pause, avance e revise cada fase do processo.</p>
+            <div class="product-card__meta">
+              <span>⏱ 25–50 min</span>
+              <span>🎓 Ensino Médio</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="badge-free">Gratuito</span>
+            <a href="#" class="btn btn--primary btn--sm">Acessar →</a>
+          </div>
+        </article>
+
+        <!-- PRODUTO 5 -->
+        <article class="product-card" data-category="jogo">
+          <div class="product-card__thumb product-card__thumb--chemistry">
+            <span class="product-card__emoji">⚗️</span>
+            <span class="product-card__type">Jogo</span>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__subject">Química</span>
+            <h3>Ligações Químicas: O Jogo</h3>
+            <p>Monte moléculas e descubra as regras das ligações covalentes e iônicas neste jogo de puzzle científico.</p>
+            <div class="product-card__meta">
+              <span>⏱ 20–40 min</span>
+              <span>🎓 Ensino Médio</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="badge-free">Gratuito</span>
+            <a href="#" class="btn btn--primary btn--sm">Acessar →</a>
+          </div>
+        </article>
+
+        <!-- PRODUTO 6 -->
+        <article class="product-card" data-category="ambiente">
+          <div class="product-card__thumb product-card__thumb--geo">
+            <span class="product-card__emoji">🌍</span>
+            <span class="product-card__type">Ambiente Virtual</span>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__subject">Geografia</span>
+            <h3>Biomas Brasileiros em 360°</h3>
+            <p>Explore os principais biomas do Brasil em ambiente imersivo. Compare características, fauna, flora e clima de cada região.</p>
+            <div class="product-card__meta">
+              <span>⏱ 30–50 min</span>
+              <span>🎓 Fund. II / Médio</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="badge-free">Gratuito</span>
+            <a href="#" class="btn btn--primary btn--sm">Acessar →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER PREMIUM -->
+  <section class="products-premium-banner">
+    <div class="container">
+      <div class="premium-banner">
+        <div class="premium-banner__text">
+          <h3>Quer mais? Conheça o Premium.</h3>
+          <p>Planos de aula completos, múltiplos jogos por simulador, provas, atividades e certificação. Tudo que o educador precisa em um só produto.</p>
+        </div>
+        <a href="index.html#premium" class="btn btn--primary btn--lg">Ver Planos Premium</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo">@experimenta</a>
+        <p>Simuladores e ambientes virtuais de aprendizagem para educadores que fazem a diferença.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h5>Produtos</h5>
+          <a href="produtos.html">Gratuitos</a>
+          <a href="index.html#premium">Premium</a>
+          <a href="index.html#encomendas">Encomendas</a>
+        </div>
+        <div class="footer__col">
+          <h5>Empresa</h5>
+          <a href="index.html#contato">Contato</a>
+          <a href="#">Sobre</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 @experimenta — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
