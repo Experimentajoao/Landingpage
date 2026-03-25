@@ -1030,14 +1030,14 @@ h5 { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spac
 @media (max-width: 768px) {
   :root { --section-py: 3.5rem; }
   .navbar__links { display: none; }
-  .hero__content { padding: 7rem 1.5rem 8rem; }
-  .hero__stats { flex-wrap: wrap; gap: 1rem; padding: 0.75rem 1.25rem; }
+  .hero__content { padding: 7rem 1.5rem 4rem; }
+  .hero__stats { flex-wrap: wrap; gap: 1rem; padding: 0.75rem 1.25rem; gap: 1.25rem; }
+  .hero__scroll-indicator { display: none; }
   .compare__grid { grid-template-columns: 1fr; }
   .contact__inner { grid-template-columns: 1fr; gap: 3rem; }
   .footer__inner { grid-template-columns: 1fr; gap: 2rem; }
   .cta-free__inner { flex-direction: column; text-align: center; }
   .btn--cta-big { min-width: 280px; }
-  .hero__stats { gap: 1.25rem; }
   .hiw-grid { grid-template-columns: 1fr; }
   .pillars { grid-template-columns: 1fr; }
   .products-grid { grid-template-columns: 1fr; }
@@ -1045,7 +1045,7 @@ h5 { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spac
 }
 
 @media (max-width: 480px) {
-  .hero__content { padding: 6rem 1.25rem 9rem; }
+  .hero__content { padding: 6rem 1.25rem 4rem; }
   .hero__actions { flex-direction: column; }
   .hero__actions .btn { width: 100%; }
   .btn--cta-big { width: 100%; min-width: unset; }
