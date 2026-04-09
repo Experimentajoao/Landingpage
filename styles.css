@@ -1052,6 +1052,130 @@ h5 { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spac
 }
 
 /* ================================================
+   SIMULATORS HUB
+   ================================================ */
+.simulators {
+  padding: var(--section-py) 0;
+}
+.simulators__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Simulator card */
+.sim-card {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+.sim-card:not(.sim-card--soon):hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-brand);
+  border-color: rgba(249,115,22,.3);
+}
+.sim-card--soon {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Simulator visual area */
+.sim-visual {
+  position: relative;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Visual backgrounds — one per simulator */
+.sim-visual--thermo {
+  background: linear-gradient(145deg, #280a00 0%, #4a1500 35%, #0e1f42 100%);
+}
+.sim-visual--war {
+  background: linear-gradient(145deg, #081208 0%, #122e12 55%, #0a180a 100%);
+}
+.sim-visual--vector {
+  background: linear-gradient(135deg, #080828 0%, #16103c 55%, #081828 100%);
+}
+.sim-visual--lab {
+  background: linear-gradient(145deg, #031408 0%, #063d18 55%, #0a2010 100%);
+}
+.sim-visual--eletro {
+  background: linear-gradient(135deg, #0c0a1e 0%, #1a0a3e 50%, #0a1a10 100%);
+}
+.sim-visual--mobo {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5c 100%);
+}
+.sim-visual--dama {
+  background: linear-gradient(135deg, #1a0a00 0%, #2a1500 50%, #1a1a1a 100%);
+}
+.sim-visual--soon {
+  background: linear-gradient(135deg, #111 0%, #1e1e1e 100%);
+}
+
+/* SVG icon inside visual */
+.sim-icon {
+  position: relative;
+  z-index: 2;
+  width: 72px;
+  height: 72px;
+  color: rgba(249,115,22,.85);
+  filter: drop-shadow(0 0 16px rgba(249,115,22,.5));
+  animation: float 4s ease-in-out infinite;
+}
+.sim-icon svg { width: 100%; height: 100%; }
+
+/* "Em breve" placeholder icon */
+.sim-soon-icon {
+  position: relative;
+  z-index: 2;
+  font-size: 2.5rem;
+  font-weight: 200;
+  line-height: 1;
+  color: rgba(255,255,255,.15);
+  font-family: var(--font-display);
+}
+
+.sim-card__body { padding: 1.75rem; }
+.sim-card__body h3 { margin-bottom: 0.75rem; margin-top: 0.5rem; }
+.sim-card__body > p { color: var(--gray-400); font-size: 0.9rem; line-height: 1.65; margin-bottom: 1.25rem; }
+
+/* Product card icon support (for produtos.html) */
+.product-card__icon {
+  position: relative;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  color: rgba(249,115,22,.85);
+  filter: drop-shadow(0 0 12px rgba(249,115,22,.5));
+  animation: float 4s ease-in-out infinite;
+}
+.product-card__icon svg { width: 100%; height: 100%; }
+
+/* New product thumb backgrounds */
+.product-card__thumb--thermo {
+  background: linear-gradient(145deg, #280a00 0%, #4a1500 35%, #0e1f42 100%);
+}
+.product-card__thumb--war {
+  background: linear-gradient(145deg, #081208 0%, #122e12 55%, #0a180a 100%);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .simulators__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .simulators__grid { grid-template-columns: 1fr; }
+}
+
+/* ================================================
    SCROLL REVEAL ANIMATION
    ================================================ */
 .reveal {

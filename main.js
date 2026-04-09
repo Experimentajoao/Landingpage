@@ -196,7 +196,7 @@ const initStarfield = () => {
 // ================================================
 const revealElements = () => {
   const elements = document.querySelectorAll(
-    '.hiw-item, .order-card, .pillar, .compare__card, .product-card, .cta-free__inner > *'
+    '.hiw-item, .order-card, .pillar, .product-card, .sim-card'
   );
   elements.forEach((el, i) => {
     el.classList.add('reveal');

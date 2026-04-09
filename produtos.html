@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Produtos Gratuitos — @experimentajoao</title>
-  <meta name="description" content="Explore simuladores, jogos digitais e ambientes virtuais de aprendizagem gratuitos do @experimentajoao." />
+  <title>Simuladores — @experimentajoao</title>
+  <meta name="description" content="Simuladores interativos e ambientes virtuais de aprendizagem gratuitos do @experimentajoao. Física, Matemática, Biologia e Informática." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -17,7 +17,6 @@
     <div class="container navbar__inner">
       <a href="index.html" class="navbar__logo">@experimentajoao</a>
       <nav class="navbar__links">
-        <a href="index.html#premium">Premium</a>
         <a href="index.html#encomendas">Encomendas</a>
         <a href="index.html#contato">Contato</a>
       </nav>
@@ -31,8 +30,8 @@
     <div class="container products-hero__inner">
       <a href="index.html" class="back-link">← Voltar ao início</a>
       <span class="hero__badge">Acesso 100% Gratuito</span>
-      <h1>Produtos <span class="highlight">Gratuitos</span></h1>
-      <p>Simuladores, jogos e ambientes virtuais disponíveis agora, sem necessidade de cadastro ou pagamento. Experimente e leve para sua aula.</p>
+      <h1>Simuladores <span class="highlight">Interativos</span></h1>
+      <p>Ambientes virtuais disponíveis agora, sem necessidade de cadastro ou pagamento. Explore e leve para sua aula.</p>
       <div class="products-filter">
         <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
         <button class="filter-btn" data-filter="simulador">Simuladores</button>
@@ -42,171 +41,241 @@
     </div>
   </section>
 
-  <!-- GRADE DE PRODUTOS -->
+  <!-- GRADE DE SIMULADORES -->
   <section class="products-grid-section">
     <div class="container">
       <div class="products-grid" id="products-grid">
 
-        <!-- PRODUTO 1 -->
+        <!-- 1. Processos Termodinâmicos -->
         <article class="product-card" data-category="simulador">
-          <div class="product-card__thumb product-card__thumb--physics">
-            <span class="product-card__emoji">⚡</span>
+          <div class="product-card__thumb product-card__thumb--thermo">
+            <div class="order-card__dots"></div>
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="8" y1="40" x2="40" y2="40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+                <line x1="8" y1="8" x2="8" y2="40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+                <path d="M11 36 C14 27 19 17 27 13 C34 10 38 12 40 15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+                <path d="M11 39 C14 31 19 23 27 20 C34 17 38 19 40 22" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.4"/>
+                <circle cx="20" cy="26" r="2.5" fill="currentColor" opacity="0.9"/>
+                <circle cx="30" cy="18" r="2" fill="currentColor" opacity="0.55"/>
+                <text x="36" y="44" font-size="6" fill="currentColor" opacity="0.55" font-family="sans-serif">V</text>
+                <text x="3" y="11" font-size="6" fill="currentColor" opacity="0.55" font-family="sans-serif">P</text>
+              </svg>
+            </div>
             <span class="product-card__type">Simulador</span>
           </div>
           <div class="product-card__body">
-            <span class="product-card__subject">Física</span>
-            <h3>Simulador de Campo Elétrico</h3>
-            <p>Visualize linhas de campo elétrico em tempo real. Adicione cargas positivas e negativas e observe como o campo se comporta.</p>
+            <span class="product-card__subject">Física — Termodinâmica</span>
+            <h3>Processos Termodinâmicos</h3>
+            <p>Visualize processos isotérmicos, isobáricos e adiabáticos no diagrama PV. Explore as leis da termodinâmica de forma interativa.</p>
             <div class="product-card__meta">
-              <span>⏱ 30–60 min</span>
-              <span>🎓 Ensino Médio</span>
+              <span>Ensino Médio / Superior</span>
             </div>
           </div>
           <div class="product-card__footer">
             <span class="badge-free">Gratuito</span>
-            <a href="#" class="btn btn--primary btn--sm">Acessar →</a>
+            <a href="https://experimentajoao.github.io/Processos-termodin-micos-/" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Acessar →</a>
           </div>
         </article>
 
-        <!-- PRODUTO 2 -->
+        <!-- 2. Funções de Guerra -->
         <article class="product-card" data-category="jogo">
-          <div class="product-card__thumb product-card__thumb--math">
-            <span class="product-card__emoji">♟️</span>
+          <div class="product-card__thumb product-card__thumb--war">
+            <div class="order-card__dots"></div>
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 41 Q22 5 43 26" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+                <circle cx="24.5" cy="12" r="3" fill="currentColor"/>
+                <path d="M38 22 L43 26 L38 30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <rect x="4" y="37" width="14" height="5" rx="2.5" fill="currentColor" opacity="0.65"/>
+                <line x1="4" y1="43" x2="44" y2="43" stroke="currentColor" stroke-width="1" opacity="0.3" stroke-linecap="round"/>
+              </svg>
+            </div>
             <span class="product-card__type">Jogo</span>
           </div>
           <div class="product-card__body">
-            <span class="product-card__subject">Matemática</span>
-            <h3>Damas no Plano Cartesiano</h3>
-            <p>O clássico jogo de damas transformado em ferramenta de ensino de Geometria Analítica com coordenadas e vetores.</p>
+            <span class="product-card__subject">Matemática — Funções</span>
+            <h3>Funções de Guerra</h3>
+            <p>Aprenda funções quadráticas e trajetórias parabólicas em contexto gamificado de artilharia e balística.</p>
             <div class="product-card__meta">
-              <span>⏱ 20–45 min</span>
-              <span>🎓 Ensino Médio</span>
+              <span>Ensino Médio</span>
             </div>
           </div>
           <div class="product-card__footer">
             <span class="badge-free">Gratuito</span>
-            <a href="#" class="btn btn--primary btn--sm">Acessar →</a>
+            <a href="https://experimentajoao.github.io/Funcoesdeguerra/" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Acessar →</a>
           </div>
         </article>
 
-        <!-- PRODUTO 3 -->
-        <article class="product-card" data-category="ambiente">
-          <div class="product-card__thumb product-card__thumb--hardware">
-            <span class="product-card__emoji">🖥️</span>
-            <span class="product-card__type">Ambiente Virtual</span>
-          </div>
-          <div class="product-card__body">
-            <span class="product-card__subject">Informática</span>
-            <h3>Explorando a Placa-Mãe</h3>
-            <p>Conheça os componentes de uma placa-mãe em ambiente virtual interativo. Identifique slots, conectores e chips em 3D.</p>
-            <div class="product-card__meta">
-              <span>⏱ 40–60 min</span>
-              <span>🎓 Técnico/Médio</span>
-            </div>
-          </div>
-          <div class="product-card__footer">
-            <span class="badge-free">Gratuito</span>
-            <a href="#" class="btn btn--primary btn--sm">Acessar →</a>
-          </div>
-        </article>
-
-        <!-- PRODUTO 4 -->
-        <article class="product-card" data-category="simulador">
-          <div class="product-card__thumb product-card__thumb--bio">
-            <span class="product-card__emoji">🧬</span>
-            <span class="product-card__type">Simulador</span>
-          </div>
-          <div class="product-card__body">
-            <span class="product-card__subject">Biologia</span>
-            <h3>Divisão Celular Interativa</h3>
-            <p>Acompanhe as etapas da mitose e meiose em animação interativa. Pause, avance e revise cada fase do processo.</p>
-            <div class="product-card__meta">
-              <span>⏱ 25–50 min</span>
-              <span>🎓 Ensino Médio</span>
-            </div>
-          </div>
-          <div class="product-card__footer">
-            <span class="badge-free">Gratuito</span>
-            <a href="#" class="btn btn--primary btn--sm">Acessar →</a>
-          </div>
-        </article>
-
-        <!-- PRODUTO 5 -->
-        <article class="product-card" data-category="jogo">
-          <div class="product-card__thumb product-card__thumb--chemistry">
-            <span class="product-card__emoji">⚗️</span>
-            <span class="product-card__type">Jogo</span>
-          </div>
-          <div class="product-card__body">
-            <span class="product-card__subject">Química</span>
-            <h3>Ligações Químicas: O Jogo</h3>
-            <p>Monte moléculas e descubra as regras das ligações covalentes e iônicas neste jogo de puzzle científico.</p>
-            <div class="product-card__meta">
-              <span>⏱ 20–40 min</span>
-              <span>🎓 Ensino Médio</span>
-            </div>
-          </div>
-          <div class="product-card__footer">
-            <span class="badge-free">Gratuito</span>
-            <a href="#" class="btn btn--primary btn--sm">Acessar →</a>
-          </div>
-        </article>
-
-        <!-- PRODUTO 6 — Campo Vetorial -->
+        <!-- 3. Campo Vetorial -->
         <article class="product-card" data-category="simulador">
           <div class="product-card__thumb product-card__thumb--vector">
-            <span class="product-card__emoji">🧭</span>
+            <div class="order-card__dots"></div>
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="12" y1="13" x2="18" y2="9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <polyline points="15,8 18,9 17,12" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
+                <line x1="24" y1="10" x2="29" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <polyline points="27,8 29,10 27,12" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
+                <line x1="36" y1="13" x2="38" y2="19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <polyline points="36,17 38,19 40,17" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
+                <line x1="10" y1="24" x2="10" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <polyline points="8,20 10,18 12,20" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
+                <circle cx="24" cy="24" r="3.5" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                <line x1="38" y1="24" x2="38" y2="30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <polyline points="36,28 38,30 40,28" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
+                <line x1="12" y1="35" x2="8" y2="31" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <polyline points="7,33 8,31 10,33" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
+                <line x1="24" y1="38" x2="19" y2="38" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <polyline points="21,36 19,38 21,40" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
+                <line x1="36" y1="35" x2="30" y2="38" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <polyline points="32,36 30,38 32,40" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </div>
             <span class="product-card__type">Simulador</span>
           </div>
           <div class="product-card__body">
-            <span class="product-card__subject">Física / Cálculo</span>
+            <span class="product-card__subject">Física / Cálculo — Vetorial</span>
             <h3>Simulador de Campo Vetorial</h3>
-            <p>Visualize e explore campos vetoriais 2D em tempo real. Ajuste a função de campo, observe linhas de fluxo, divergência e rotacional — ideal para Eletromagnetismo e Cálculo Vetorial.</p>
+            <p>Explore campos vetoriais 2D em tempo real. Visualize linhas de fluxo, divergência e rotacional — ideal para eletromagnetismo e cálculo.</p>
             <div class="product-card__meta">
-              <span>⏱ 45–90 min</span>
-              <span>🎓 Nível Superior</span>
+              <span>Nível Superior</span>
             </div>
           </div>
           <div class="product-card__footer">
             <span class="badge-free">Gratuito</span>
-            <a href="#" class="btn btn--primary btn--sm">Acessar →</a>
+            <a href="https://experimentajoao.github.io/Vetorial/" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Acessar →</a>
           </div>
         </article>
 
-        <!-- PRODUTO 7 -->
+        <!-- 4. Lab da Vida -->
         <article class="product-card" data-category="ambiente">
-          <div class="product-card__thumb product-card__thumb--geo">
-            <span class="product-card__emoji">🌍</span>
+          <div class="product-card__thumb product-card__thumb--bio">
+            <div class="order-card__dots"></div>
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="24" cy="24" rx="17" ry="15" stroke="currentColor" stroke-width="1.5"/>
+                <ellipse cx="22" cy="22" rx="8" ry="7" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 2"/>
+                <circle cx="33" cy="17" r="3" stroke="currentColor" stroke-width="1.1" opacity="0.65"/>
+                <path d="M32 13 C35 10 38 12 36 16" stroke="currentColor" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+                <circle cx="16" cy="32" r="2.5" fill="currentColor" opacity="0.45"/>
+                <circle cx="30" cy="31" r="1.8" fill="currentColor" opacity="0.5"/>
+                <circle cx="26" cy="14" r="1.5" fill="currentColor" opacity="0.4"/>
+              </svg>
+            </div>
             <span class="product-card__type">Ambiente Virtual</span>
           </div>
           <div class="product-card__body">
-            <span class="product-card__subject">Geografia</span>
-            <h3>Biomas Brasileiros em 360°</h3>
-            <p>Explore os principais biomas do Brasil em ambiente imersivo. Compare características, fauna, flora e clima de cada região.</p>
+            <span class="product-card__subject">Biologia — Célula</span>
+            <h3>Lab da Vida</h3>
+            <p>Explore a célula e seus organelas em ambiente virtual interativo. Entenda a biologia celular de forma visual e dinâmica.</p>
             <div class="product-card__meta">
-              <span>⏱ 30–50 min</span>
-              <span>🎓 Fund. II / Médio</span>
+              <span>Ensino Médio</span>
             </div>
           </div>
           <div class="product-card__footer">
             <span class="badge-free">Gratuito</span>
-            <a href="#" class="btn btn--primary btn--sm">Acessar →</a>
+            <a href="https://experimentajoao.github.io/Labdavida/" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Acessar →</a>
           </div>
         </article>
 
-      </div>
-    </div>
-  </section>
+        <!-- 5. Noite Eletrostática -->
+        <article class="product-card" data-category="simulador">
+          <div class="product-card__thumb product-card__thumb--physics">
+            <div class="order-card__dots"></div>
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M24 8 C14 12 10 20 14 28 C18 36 30 38 36 32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                <path d="M24 8 C34 12 38 20 34 28 C30 36 18 38 12 32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                <path d="M8 24 C12 14 20 10 28 14 C36 18 38 30 32 36" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                <circle cx="14" cy="14" r="2.5" fill="currentColor" opacity="0.6"/>
+                <circle cx="34" cy="34" r="2.5" fill="currentColor" opacity="0.6"/>
+              </svg>
+            </div>
+            <span class="product-card__type">Simulador</span>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__subject">Física — Eletrostática</span>
+            <h3>Noite Eletrostática</h3>
+            <p>Inspirado em Van Gogh, as linhas de campo elétrico ganham a estética da "Noite Estrelada". Manipule cargas e observe o campo se formar.</p>
+            <div class="product-card__meta">
+              <span>Ensino Médio</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="badge-free">Gratuito</span>
+            <a href="https://experimentajoao.github.io/Noite-eletrost-tica-/" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Acessar →</a>
+          </div>
+        </article>
 
-  <!-- BANNER PREMIUM -->
-  <section class="products-premium-banner">
-    <div class="container">
-      <div class="premium-banner">
-        <div class="premium-banner__text">
-          <h3>Quer mais? Conheça o Premium.</h3>
-          <p>Planos de aula completos, múltiplos jogos por simulador, provas, atividades e certificação. Tudo que o educador precisa em um só produto.</p>
-        </div>
-        <a href="index.html#premium" class="btn btn--primary btn--lg">Ver Planos Premium</a>
+        <!-- 6. Placa-Mãe -->
+        <article class="product-card" data-category="ambiente">
+          <div class="product-card__thumb product-card__thumb--hardware">
+            <div class="order-card__dots"></div>
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+                <rect x="12" y="16" width="8" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="28" y="16" width="10" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="6" y1="24" x2="2" y2="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="6" y1="28" x2="2" y2="28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="42" y1="20" x2="46" y2="20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="42" y1="24" x2="46" y2="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="16" y1="38" x2="16" y2="42" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="22" y1="38" x2="22" y2="42" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="28" y1="38" x2="28" y2="42" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="product-card__type">Ambiente Virtual</span>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__subject">Informática — Hardware</span>
+            <h3>Explorando a Placa-Mãe</h3>
+            <p>Identifique slots, conectores e chipsets em ambiente virtual interativo. Entenda como cada componente contribui para o funcionamento do computador.</p>
+            <div class="product-card__meta">
+              <span>Ensino Médio / Técnico</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="badge-free">Gratuito</span>
+            <a href="https://experimentajoao.github.io/Placa-m-e/" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Acessar →</a>
+          </div>
+        </article>
+
+        <!-- 7. Dama Cartesiana -->
+        <article class="product-card" data-category="jogo">
+          <div class="product-card__thumb product-card__thumb--math">
+            <div class="order-card__dots"></div>
+            <div class="product-card__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="8" y1="40" x2="40" y2="40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="8" y1="8" x2="8" y2="40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="8" y1="24" x2="40" y2="24" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" stroke-linecap="round" opacity="0.5"/>
+                <line x1="24" y1="8" x2="24" y2="40" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" stroke-linecap="round" opacity="0.5"/>
+                <circle cx="18" cy="32" r="4" fill="currentColor" opacity="0.9"/>
+                <circle cx="30" cy="20" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M18 32 L30 20" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2" opacity="0.6"/>
+                <text x="38" y="43" font-size="6" fill="currentColor" opacity="0.7" font-family="sans-serif">x</text>
+                <text x="4" y="9" font-size="6" fill="currentColor" opacity="0.7" font-family="sans-serif">y</text>
+              </svg>
+            </div>
+            <span class="product-card__type">Jogo</span>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__subject">Matemática — Geometria Analítica</span>
+            <h3>Dama Cartesiana</h3>
+            <p>O clássico jogo de damas como ferramenta de geometria analítica. Cada movimento é descrito por coordenadas, vetores e transformações geométricas.</p>
+            <div class="product-card__meta">
+              <span>Ensino Médio</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="badge-free">Gratuito</span>
+            <a href="https://experimentajoao.github.io/Damacartesiana/" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Acessar →</a>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -220,15 +289,14 @@
       </div>
       <div class="footer__links">
         <div class="footer__col">
-          <h5>Produtos</h5>
-          <a href="produtos.html">Gratuitos</a>
-          <a href="index.html#premium">Premium</a>
+          <h5>Navegação</h5>
+          <a href="index.html">Início</a>
           <a href="index.html#encomendas">Encomendas</a>
         </div>
         <div class="footer__col">
-          <h5>Empresa</h5>
-          <a href="index.html#contato">Contato</a>
-          <a href="#">Sobre</a>
+          <h5>Contato</h5>
+          <a href="index.html#contato">Fale conosco</a>
+          <a href="https://instagram.com/experimentajoao" target="_blank" rel="noopener">Instagram</a>
         </div>
       </div>
     </div>
